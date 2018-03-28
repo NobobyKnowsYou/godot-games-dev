@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Blip_Select_3.ogg-ffdb42cbb9593bddfca672738eed6728.oggstr"
+
+[deps]
+
+source_file="res://sounds/Blip_Select_3.ogg"
+source_md5="7b793c096b3a61866e537a217f2849ad"
+
+dest_files=[ "res://.import/Blip_Select_3.ogg-ffdb42cbb9593bddfca672738eed6728.oggstr" ]
+dest_md5="d9bf28ec82d2a34ca0a9b6647dde4e6e"
+
+[params]
+
+loop=false
+loop_offset=0

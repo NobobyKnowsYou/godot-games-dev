@@ -1,0 +1,544 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://scripts/OPTS.gd" type="Script" id=1]
+[ext_resource path="res://fonts/HoboStd.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://imgs/Btt_Close_50px.png" type="Texture" id=3]
+
+[sub_resource type="ShaderMaterial" id=1]
+
+render_priority = 0
+
+[sub_resource type="StyleBoxFlat" id=2]
+
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
+bg_color = Color( 0.745098, 0.745098, 0.745098, 1 )
+draw_center = true
+border_width_left = 0
+border_width_top = 0
+border_width_right = 0
+border_width_bottom = 0
+border_color = Color( 0.8, 0.8, 0.8, 1 )
+border_blend = false
+corner_radius_top_left = 0
+corner_radius_top_right = 0
+corner_radius_bottom_right = 0
+corner_radius_bottom_left = 0
+corner_detail = 8
+expand_margin_left = 0.0
+expand_margin_right = 0.0
+expand_margin_top = 0.0
+expand_margin_bottom = 0.0
+shadow_color = Color( 0, 0, 0, 0.6 )
+shadow_size = 0
+anti_aliasing = true
+anti_aliasing_size = 1
+
+[sub_resource type="StyleBoxFlat" id=3]
+
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
+bg_color = Color( 0.636398, 0.573578, 0.699219, 1 )
+draw_center = true
+border_width_left = 0
+border_width_top = 0
+border_width_right = 0
+border_width_bottom = 0
+border_color = Color( 0.8, 0.8, 0.8, 1 )
+border_blend = false
+corner_radius_top_left = 0
+corner_radius_top_right = 0
+corner_radius_bottom_right = 0
+corner_radius_bottom_left = 0
+corner_detail = 8
+expand_margin_left = 0.0
+expand_margin_right = 0.0
+expand_margin_top = 0.0
+expand_margin_bottom = 0.0
+shadow_color = Color( 0, 0, 0, 0.6 )
+shadow_size = 0
+anti_aliasing = true
+anti_aliasing_size = 1
+
+[sub_resource type="DynamicFont" id=4]
+
+size = 21
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 2 )
+fallback/0 = ExtResource( 2 )
+_sections_unfolded = [ "Font", "Font/fallback", "Resource", "Settings" ]
+
+[sub_resource type="StyleBoxFlat" id=5]
+
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
+bg_color = Color( 0.766115, 0.717972, 0.824219, 1 )
+draw_center = true
+border_width_left = 0
+border_width_top = 0
+border_width_right = 0
+border_width_bottom = 0
+border_color = Color( 0.222656, 0.221786, 0.221786, 1 )
+border_blend = true
+corner_radius_top_left = 0
+corner_radius_top_right = 0
+corner_radius_bottom_right = 0
+corner_radius_bottom_left = 0
+corner_detail = 10
+expand_margin_left = 0.0
+expand_margin_right = 0.0
+expand_margin_top = 0.0
+expand_margin_bottom = 0.0
+shadow_color = Color( 0, 0, 0, 0.6 )
+shadow_size = 0
+anti_aliasing = true
+anti_aliasing_size = 1
+_sections_unfolded = [ "Border", "Border Width", "Shadow" ]
+
+[sub_resource type="DynamicFont" id=6]
+
+size = 16
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 2 )
+fallback/0 = ExtResource( 2 )
+_sections_unfolded = [ "Font", "Font/fallback", "Settings" ]
+
+[sub_resource type="DynamicFont" id=7]
+
+size = 18
+use_mipmaps = true
+use_filter = false
+font_data = ExtResource( 2 )
+fallback/0 = ExtResource( 2 )
+_sections_unfolded = [ "Extra Spacing", "Font", "Font/fallback", "Settings" ]
+
+[sub_resource type="DynamicFont" id=8]
+
+size = 20
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 2 )
+fallback/0 = ExtResource( 2 )
+_sections_unfolded = [ "Font", "Font/fallback", "Settings" ]
+
+[sub_resource type="DynamicFont" id=9]
+
+size = 10
+use_mipmaps = false
+use_filter = true
+font_data = ExtResource( 2 )
+fallback/0 = ExtResource( 2 )
+_sections_unfolded = [ "Font", "Font/fallback", "Settings" ]
+
+[node name="OPTS" type="Node2D" index="0"]
+
+pause_mode = 2
+script = ExtResource( 1 )
+_sections_unfolded = [ "Pause" ]
+__meta__ = {
+"_edit_vertical_guides_": [ 441.117 ]
+}
+
+[node name="Base" type="Panel" parent="." index="0"]
+
+pause_mode = 2
+material = SubResource( 1 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 377.0
+margin_top = 140.0
+margin_right = 900.0
+margin_bottom = 691.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/panel = SubResource( 2 )
+_sections_unfolded = [ "Material", "Pause", "custom_styles" ]
+
+[node name="panelOpt" type="Panel" parent="." index="1"]
+
+pause_mode = 2
+material = SubResource( 1 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 388.0
+margin_top = 150.0
+margin_right = 888.0
+margin_bottom = 700.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/panel = SubResource( 3 )
+_sections_unfolded = [ "Material", "Pause", "Rect", "custom_styles" ]
+
+[node name="titleOPT" type="Label" parent="panelOpt" index="0"]
+
+pause_mode = 2
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 45.0
+margin_top = 22.0
+margin_right = 137.0
+margin_bottom = 44.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 4 )
+text = "OPTIONS"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="SkillsOPT" type="Panel" parent="panelOpt" index="1"]
+
+pause_mode = 2
+material = SubResource( 1 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 31.0
+margin_top = 58.0
+margin_right = 469.0
+margin_bottom = 268.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/panel = SubResource( 5 )
+_sections_unfolded = [ "Material", "Pause", "Rect", "custom_styles" ]
+
+[node name="titleSKILLS" type="Label" parent="panelOpt/SkillsOPT" index="0"]
+
+pause_mode = 2
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 22.0
+margin_top = 16.0
+margin_right = 176.0
+margin_bottom = 38.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 6 )
+text = "Challenge"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Pause", "custom_fonts" ]
+
+[node name="Btt_EASY" type="CheckButton" parent="panelOpt/SkillsOPT" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 104.0
+margin_top = 37.0
+margin_right = 368.0
+margin_bottom = 117.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 7 )
+toggle_mode = true
+pressed = true
+action_mode = 0
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Easy"
+flat = false
+align = 0
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="Btt_MEDIUM" type="CheckButton" parent="panelOpt/SkillsOPT" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 104.0
+margin_top = 87.0
+margin_right = 368.0
+margin_bottom = 167.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 7 )
+toggle_mode = true
+action_mode = 0
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Moderate"
+flat = false
+align = 0
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="Btt_HARD" type="CheckButton" parent="panelOpt/SkillsOPT" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 104.0
+margin_top = 137.0
+margin_right = 368.0
+margin_bottom = 217.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 7 )
+toggle_mode = true
+action_mode = 0
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Hard"
+flat = false
+align = 0
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="memoryOPT" type="Panel" parent="panelOpt" index="2"]
+
+pause_mode = 2
+material = SubResource( 1 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 31.0
+margin_top = 278.0
+margin_right = 469.0
+margin_bottom = 392.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/panel = SubResource( 5 )
+_sections_unfolded = [ "Material", "Rect", "custom_styles" ]
+
+[node name="titleMemo" type="Label" parent="panelOpt/memoryOPT" index="0"]
+
+pause_mode = 2
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 22.0
+margin_top = 16.0
+margin_right = 181.0
+margin_bottom = 38.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 6 )
+text = "Memorizing"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="Btt_MEMO" type="CheckButton" parent="panelOpt/memoryOPT" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 79.0
+margin_top = 40.0
+margin_right = 371.0
+margin_bottom = 120.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 7 )
+toggle_mode = true
+pressed = true
+action_mode = 0
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Visual Sequence"
+flat = false
+align = 0
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="soundOPT" type="Panel" parent="panelOpt" index="3"]
+
+pause_mode = 2
+material = SubResource( 1 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 31.0
+margin_top = 402.0
+margin_right = 469.0
+margin_bottom = 516.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/panel = SubResource( 5 )
+_sections_unfolded = [ "Material", "Rect", "custom_styles" ]
+
+[node name="titleSound" type="Label" parent="panelOpt/soundOPT" index="0"]
+
+pause_mode = 2
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 22.0
+margin_top = 16.0
+margin_right = 181.0
+margin_bottom = 38.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 6 )
+text = "Listening"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="Btt_Sound" type="CheckButton" parent="panelOpt/soundOPT" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 109.0
+margin_top = 40.0
+margin_right = 371.0
+margin_bottom = 120.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 7 )
+toggle_mode = true
+pressed = true
+action_mode = 0
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Sound FX"
+flat = false
+align = 0
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="BttCloseOPTS" type="Button" parent="panelOpt" index="4"]
+
+pause_mode = 2
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 369.0
+margin_top = 17.0
+margin_right = 472.0
+margin_bottom = 54.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 8 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Close"
+icon = ExtResource( 3 )
+flat = true
+align = 2
+_sections_unfolded = [ "Pause", "Rect", "Textures", "custom_fonts" ]
+
+[node name="devBy" type="Label" parent="panelOpt" index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 33.0
+margin_top = 521.0
+margin_right = 470.0
+margin_bottom = 546.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 9 )
+text = "Developed by Bond, Games Bond!"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[connection signal="pressed" from="panelOpt/SkillsOPT/Btt_EASY" to="." method="_on_Btt_EASY_pressed"]
+
+[connection signal="pressed" from="panelOpt/SkillsOPT/Btt_MEDIUM" to="." method="_on_Btt_MEDIUM_pressed"]
+
+[connection signal="pressed" from="panelOpt/SkillsOPT/Btt_HARD" to="." method="_on_Btt_HARD_pressed"]
+
+[connection signal="pressed" from="panelOpt/memoryOPT/Btt_MEMO" to="." method="_on_Btt_MEMO_pressed"]
+
+[connection signal="pressed" from="panelOpt/soundOPT/Btt_Sound" to="." method="_on_Btt_Sound_pressed"]
+
+[connection signal="pressed" from="panelOpt/BttCloseOPTS" to="." method="_on_BttCloseOPTS_pressed"]
+
+
